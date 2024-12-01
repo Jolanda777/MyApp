@@ -1,0 +1,56 @@
+.star-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[name="star"] {
+  display: none;
+}
+
+.star {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.15rem;
+  color: transparent;
+  stroke: #d5df16;
+  stroke-width: 2px;
+  transition: color 0.2s ease-in-out, stroke 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+label:hover ~ label .star,
+svg.star:hover,
+input[name="star"]:focus ~ label .star,
+input[name="star"]:checked ~ label .star {
+  color: #dfd813;
+  stroke: #bf209f;
+}
+
+input[name="star"]:checked + label .star {
+  stroke-width: 3px;
+  animation: starred 0.5s;
+}
+
+input[name="star"]:checked + label {
+  animation: scaleup 1s;
+}
+
+@keyframes scaleup {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes starred {
+  from {
+    color: #600040;
+  }
+  to {
+    color: #d62a9d;
+  }
+}

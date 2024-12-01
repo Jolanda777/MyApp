@@ -1,0 +1,14 @@
+[heart-icon="unlike"] {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: #ccc;
+  transition: all 0.3s ease;
+}
+[heart-icon="like"] {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: #060606;
+  transition: all 0.3s ease;
+}

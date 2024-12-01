@@ -1,0 +1,75 @@
+/*home page Header*/
+.app-container {
+  background-image: linear-gradient(to right bottom, #fdfdfd, #6e2de6);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.app-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+}
+/* Text Mangaspot */
+.greeting {
+  text-align: center;
+  flex: 1;
+  color: var(--text-color);
+}
+
+.greeting-1 {
+  text-align: left;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+.greeting-2 {
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+/* catagorien */
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+/*carousel*/
+.carousel-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 20px;
+}
+
+.carousel-item img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* bottom not for HomeWithoutLogin*/
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--nav-background-color);
+  padding: 10px;
+}
+/* layout for icon text no border  */
+.btn {
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+/* choose product card -> spring other page*/
+.cart-count {
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
